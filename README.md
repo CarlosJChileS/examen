@@ -63,7 +63,6 @@ npm run dev:typeorm
 - `npm run dev:prisma` - Desarrollo con Prisma
 - `npm run dev:typeorm` - Desarrollo con TypeORM
 - `npm run dev:auxiliar` - Servicio auxiliar de flashcards (2 capas)
-- Carpeta `src/auxiliar` (renombrada de `src/aux` para evitar conflictos en Windows)
 
 ### Producción
 - `npm run start:memory` - Producción con datasource de memoria
@@ -168,10 +167,6 @@ Puedes usar el archivo `memory-datasource.http` para probar la funcionalidad con
 | **TodoEntity** | Representa una tarea simple y sirve como base para demostrar la arquitectura. | Ejemplo inicial para cualquier datasource. |
 | **Flashcard** | Tarjeta de estudio con pregunta, respuesta y categorías asociadas. | Es la unidad básica de aprendizaje. |
 | **FlashcardInteraction** | Registra cada vez que el usuario responde una tarjeta, indicando si fue correcta y el tiempo empleado. | Permite aplicar técnicas de memoria espaciada. |
-
-
-
-## Escenario de Flashcards
 
 La primera imagen muestra un listado de flashcards para la administración de los usuarios.
 

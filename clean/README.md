@@ -63,7 +63,6 @@ npm run dev:typeorm
 - `npm run dev:prisma` - Desarrollo con Prisma 
 - `npm run dev:typeorm` - Desarrollo con TypeORM
 - `npm run dev:auxiliar` - Servicio auxiliar de flashcards (2 capas)
-- Carpeta `src/auxiliar` (renombrada de `src/aux` para evitar conflictos en Windows)
 
 ### Producción
 - `npm run start:memory` - Producción con datasource de memoria
