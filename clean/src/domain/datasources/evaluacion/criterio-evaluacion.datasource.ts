@@ -1,4 +1,4 @@
-import { CriterioEvaluacion } from '../entities/evaluacion/criterio-evaluacion.entity';
+import { CriterioEvaluacion } from '../../entities/evaluacion/criterio-evaluacion.entity';
 
 export abstract class CriterioEvaluacionDatasource {
   abstract create(criterio: CriterioEvaluacion): Promise<CriterioEvaluacion>;
