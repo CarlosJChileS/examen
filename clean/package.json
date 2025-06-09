@@ -8,6 +8,7 @@
     "dev:memory": "DATASOURCE_TYPE=memory tsnd --respawn --clear src/app.ts",
     "dev:prisma": "DATASOURCE_TYPE=prisma tsnd --respawn --clear src/app.ts",
     "dev:typeorm": "DATASOURCE_TYPE=typeorm tsnd --respawn --clear src/app.ts",
+
     "dev:auxiliar": "tsnd --respawn --clear src/auxiliar/auxiliar-server.ts",
     "build": "rimraf ./dist && tsc && npm run prisma:migrate:prod",
     "start": "node dist/app.js",
@@ -22,7 +23,7 @@
   "devDependencies": {
     "@types/compression": "^1.7.3",
     "@types/express": "^4.17.17",
-    "@types/node": "^20.5.8",
+    "@types/node": "^20.19.0",
     "prisma": "^5.2.0",
     "rimraf": "^5.0.1",
     "ts-node-dev": "^2.0.0",
