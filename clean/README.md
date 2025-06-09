@@ -101,6 +101,11 @@ POSTGRES_PASSWORD=123456
 - Operaciones CRUD + funcionalidades adicionales de gestión de datos
 - **Siempre usa datasource de memoria**, independiente de la configuración
 
+### Flashcards
+- Base URL: `/api/flashcards`
+- `GET /` obtiene todas las flashcards desde un archivo JSON
+- `POST /` agrega una nueva flashcard al archivo JSON
+
 Para más detalles sobre los endpoints de memoria, consulta [MEMORY_DATASOURCE.md](./MEMORY_DATASOURCE.md)
 
 ## Casos de Uso
@@ -158,30 +163,11 @@ Puedes usar el archivo `memory-datasource.http` para probar la funcionalidad con
 
 | Entidad | Descripción | Justificación |
 |---------|-------------|---------------|
-| **TodoEntity** | Representa una tarea por realizar con su texto y fecha de finalización opcional. | Sirve como ejemplo simple para exponer la arquitectura y probar los distintos datasources. |
-| **Calificacion** | Calificación global de una grabación realizada por un usuario, incluye puntaje, observaciones y fecha. | Permite almacenar la evaluación general y actúa como agregador de los detalles de cada criterio. |
-| **CriterioEvaluacion** | Define un criterio o aspecto a evaluar junto con su peso relativo. | Separa los distintos puntos que componen una calificación para un análisis más fino. |
-| **DetalleCalificacion** | Puntaje otorgado a un criterio en una diapositiva específica junto con comentarios y audio. | Registra la evaluación a nivel de detalle para identificar fortalezas y debilidades puntuales. |
-| **FeedbackCalificacion** | Retroalimentación textual asociada a una calificación en una fecha determinada. | Permite mantener un historial de comentarios y sugerencias sobre la presentación evaluada. |
-| **ParametrosIdeales** | Valores ideales de claridad, velocidad y pausas utilizados como referencia. | Sirven como guía para comparar las presentaciones contra un estándar deseado. |
+| **TodoEntity** | Representa una tarea simple y sirve como base para demostrar la arquitectura. | Ejemplo inicial para cualquier datasource. |
+| **Flashcard** | Tarjeta de estudio con pregunta, respuesta y categorías asociadas. | Es la unidad básica de aprendizaje. |
+| **FlashcardInteraction** | Registra cada vez que el usuario responde una tarjeta, indicando si fue correcta y el tiempo empleado. | Permite aplicar técnicas de memoria espaciada. |
 
-## Escenario de Evaluación
-
-Las siguientes imágenes ilustran el proceso para calificar grabaciones de presentaciones.
-
-1. **Listado de Calificaciones** – Se presentan todas las evaluaciones realizadas (`Calificacion`).
-   ![I1](./public/assets/images/I1.jpg)
-2. **Definición de Criterios** – El evaluador define los criterios (`CriterioEvaluacion`) y los parámetros ideales (`ParametrosIdeales`).
-   ![I2](./public/assets/images/I2.jpg)
-3. **Registro de Detalles** – Durante la revisión se genera un `DetalleCalificacion` por cada diapositiva o sección evaluada.
-   ![I3](./public/assets/images/I3.jpg)
-4. **Resumen de Resultados** – Al finalizar se muestra el puntaje global y se permite registrar observaciones.
-   ![I4](./public/assets/images/I4.jpg)
-5. **Feedback Continuo** – Es posible añadir `FeedbackCalificacion` para que el usuario mejore sus futuras presentaciones.
-   ![I5](./public/assets/images/I5.jpg)
-
-Estas imágenes reflejan cómo las cinco entidades se integran para gestionar las evaluaciones de manera completa.
-## Aplicación de Flashcards
+## Escenario de Flashcards
 
 La primera imagen muestra un listado de flashcards para la administración de los usuarios.
 
