@@ -1,22 +1,20 @@
 export class UpdateCalificacionDto {
   private constructor(
     public readonly id: number,
-    public readonly grabacionId?: number,
     public readonly usuarioId?: number,
     public readonly puntajeGlobal?: number,
     public readonly observacionGlobal?: string,
-    public readonly tipoCalificacion?: string,
+    public readonly modoEstudio?: string,
     public readonly fecha?: Date,
     public readonly parametrosIdealesId?: number,
   ) {}
 
   get values() {
     const obj: { [key: string]: any } = {};
-    if (this.grabacionId !== undefined) obj.grabacionId = this.grabacionId;
     if (this.usuarioId !== undefined) obj.usuarioId = this.usuarioId;
     if (this.puntajeGlobal !== undefined) obj.puntajeGlobal = this.puntajeGlobal;
     if (this.observacionGlobal !== undefined) obj.observacionGlobal = this.observacionGlobal;
-    if (this.tipoCalificacion !== undefined) obj.tipoCalificacion = this.tipoCalificacion;
+    if (this.modoEstudio !== undefined) obj.modoEstudio = this.modoEstudio;
     if (this.fecha) obj.fecha = this.fecha;
     if (this.parametrosIdealesId !== undefined) obj.parametrosIdealesId = this.parametrosIdealesId;
     return obj;
@@ -25,11 +23,10 @@ export class UpdateCalificacionDto {
   static create(props: { [key: string]: any }): [string?, UpdateCalificacionDto?] {
     const {
       id,
-      grabacionId,
       usuarioId,
       puntajeGlobal,
       observacionGlobal,
-      tipoCalificacion,
+      modoEstudio,
       fecha,
       parametrosIdealesId,
     } = props;
@@ -46,11 +43,10 @@ export class UpdateCalificacionDto {
       undefined,
       new UpdateCalificacionDto(
         Number(id),
-        grabacionId !== undefined ? Number(grabacionId) : undefined,
         usuarioId !== undefined ? Number(usuarioId) : undefined,
         puntajeGlobal !== undefined ? Number(puntajeGlobal) : undefined,
         observacionGlobal,
-        tipoCalificacion,
+        modoEstudio,
         parsedDate,
         parametrosIdealesId !== undefined ? Number(parametrosIdealesId) : undefined,
       ),
