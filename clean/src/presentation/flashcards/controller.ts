@@ -4,7 +4,6 @@ import { GetFlashcards } from '../../domain/use-cases/flashcards/get-flashcards'
 import { CreateFlashcard } from '../../domain/use-cases/flashcards/create-flashcard';
 import { FlashcardRepository, CreateFlashcardDto } from '../../domain';
 
-import { FlashcardRepository } from '../../domain';
 
 
 export class FlashcardsController {
