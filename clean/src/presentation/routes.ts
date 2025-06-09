@@ -25,12 +25,6 @@ export class AppRoutes {
 
     router.use('/api/flashcards', FlashcardsRoutes.routes );
 
-
-    router.use('/api/flashcards', FlashcardsRoutes.routes );
-
-
-    router.use('/api/flashcards', FlashcardsRoutes.routes );
-
     
     // Endpoint de sistema para gestión de datasource
     router.get('/api/system/info', (req: Request, res: Response) => {

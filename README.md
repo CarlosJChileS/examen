@@ -60,8 +60,9 @@ npm run dev:typeorm
 ### Desarrollo
 - `npm run dev` - Modo desarrollo (detecta DATASOURCE_TYPE automáticamente, por defecto: MEMORY)
 - `npm run dev:memory` - Desarrollo con datasource de memoria
-- `npm run dev:prisma` - Desarrollo con Prisma 
+- `npm run dev:prisma` - Desarrollo con Prisma
 - `npm run dev:typeorm` - Desarrollo con TypeORM
+- `npm run dev:auxiliar` - Servicio auxiliar de flashcards (2 capas)
 
 ### Producción
 - `npm run start:memory` - Producción con datasource de memoria
@@ -167,6 +168,7 @@ Puedes usar el archivo `memory-datasource.http` para probar la funcionalidad con
 | **Flashcard** | Tarjeta de estudio con pregunta, respuesta y categorías asociadas. | Es la unidad básica de aprendizaje. |
 | **FlashcardInteraction** | Registra cada vez que el usuario responde una tarjeta, indicando si fue correcta y el tiempo empleado. | Permite aplicar técnicas de memoria espaciada. |
 
+
 | **Flashcard** | Tarjeta de estudio con pregunta, respuesta y categorías asociadas. | Es la unidad básica de aprendizaje. |
 | **FlashcardInteraction** | Registra cada vez que el usuario responde una tarjeta, indicando si fue correcta y el tiempo empleado. | Permite aplicar técnicas de memoria espaciada. |
 
@@ -177,7 +179,6 @@ Puedes usar el archivo `memory-datasource.http` para probar la funcionalidad con
 | **DetalleCalificacion** | Guarda el resultado obtenido al revisar cada flashcard individual. | Ayuda a identificar conceptos dominados o pendientes. |
 | **FeedbackCalificacion** | Comentarios o notas de repaso asociados a la sesión estudiada. | Refuerza la mejora continua. |
 | **ParametrosIdeales** | Valores de referencia utilizados por el algoritmo de memoria espaciada. | Determinan los intervalos de repaso. |
-
 
 ## Escenario de Flashcards
 
