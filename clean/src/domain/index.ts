@@ -12,6 +12,9 @@ export * from './use-cases/todo/delete-todo';
 export * from './use-cases/todo/get-todo';
 export * from './use-cases/todo/get-todos';
 
+// Criterio Evaluacion use-cases
+export * from './use-cases/criterio-evaluacion/get-criterios';
+
 
 
 // Evaluacion domain exports
