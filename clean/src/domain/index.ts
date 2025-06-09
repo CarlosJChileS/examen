@@ -14,9 +14,15 @@ export * from './use-cases/todo/get-todos';
 
 // Flashcards use-cases
 export * from './use-cases/flashcards/get-flashcards';
+
 export * from './use-cases/flashcards/create-flashcard';
 
 
+export * from './use-cases/flashcards/create-flashcard';
+
+
+
+export * from './use-cases/criterio-evaluacion/get-criterios';
 
 // Flashcards domain exports
 export * from './entities/flashcards/flashcard.entity';

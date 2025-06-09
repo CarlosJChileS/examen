@@ -14,6 +14,9 @@ export class FlashcardsRoutes {
 
     router.get('/', controller.getFlashcards);
     router.post('/', controller.createFlashcard);
+
+    router.post('/', controller.createFlashcard);
+
     return router;
   }
 }
