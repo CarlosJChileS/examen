@@ -101,6 +101,11 @@ POSTGRES_PASSWORD=123456
 - Operaciones CRUD + funcionalidades adicionales de gestión de datos
 - **Siempre usa datasource de memoria**, independiente de la configuración
 
+### Flashcards
+- Base URL: `/api/flashcards`
+- `GET /` obtiene todas las flashcards desde un archivo JSON
+- `POST /` agrega una nueva flashcard al archivo JSON
+
 Para más detalles sobre los endpoints de memoria, consulta [MEMORY_DATASOURCE.md](./MEMORY_DATASOURCE.md)
 
 ## Casos de Uso
@@ -159,6 +164,9 @@ Puedes usar el archivo `memory-datasource.http` para probar la funcionalidad con
 | Entidad | Descripción | Justificación |
 |---------|-------------|---------------|
 | **TodoEntity** | Representa una tarea simple y sirve como base para demostrar la arquitectura. | Ejemplo inicial para cualquier datasource. |
+
+| **Flashcard** | Tarjeta de estudio con pregunta, respuesta y categorías asociadas. | Es la unidad básica de aprendizaje. |
+| **FlashcardInteraction** | Registra cada vez que el usuario responde una tarjeta, indicando si fue correcta y el tiempo empleado. | Permite aplicar técnicas de memoria espaciada. |
 
 | **Flashcard** | Tarjeta de estudio con pregunta, respuesta y categorías asociadas. | Es la unidad básica de aprendizaje. |
 | **FlashcardInteraction** | Registra cada vez que el usuario responde una tarjeta, indicando si fue correcta y el tiempo empleado. | Permite aplicar técnicas de memoria espaciada. |
