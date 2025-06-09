@@ -12,27 +12,19 @@ export * from './use-cases/todo/delete-todo';
 export * from './use-cases/todo/get-todo';
 export * from './use-cases/todo/get-todos';
 
+// Flashcards use-cases
+export * from './use-cases/flashcards/get-flashcards';
 // Criterio Evaluacion use-cases
 export * from './use-cases/criterio-evaluacion/get-criterios';
 
 
 
-// Evaluacion domain exports
-export * from './entities/evaluacion/calificacion.entity';
-export * from './entities/evaluacion/criterio-evaluacion.entity';
-export * from './entities/evaluacion/detalle-calificacion.entity';
-export * from './entities/evaluacion/feedback-calificacion.entity';
-export * from './entities/evaluacion/parametros-ideales.entity';
 
-export * from './repositories/evaluacion/calificacion.repository';
-export * from './repositories/evaluacion/criterio-evaluacion.repository';
-export * from './repositories/evaluacion/detalle-calificacion.repository';
-export * from './repositories/evaluacion/feedback-calificacion.repository';
-export * from './repositories/evaluacion/parametros-ideales.repository';
+// Flashcards domain exports
+export * from './entities/flashcards/flashcard.entity';
+export * from './entities/flashcards/flashcard-interaction.entity';
 
-export * from './datasources/evaluacion/calificacion.datasource';
-export * from './datasources/evaluacion/criterio-evaluacion.datasource';
-export * from './datasources/evaluacion/detalle-calificacion.datasource';
-export * from './datasources/evaluacion/feedback-calificacion.datasource';
-export * from './datasources/evaluacion/parametros-ideales.datasource';
+export * from './repositories/flashcards/flashcard.repository';
+
+export * from './datasources/flashcards/flashcard.datasource';
 

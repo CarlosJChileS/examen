@@ -3,6 +3,9 @@ import { Request, Response } from 'express';
 
 import { TodoRoutes } from './todos/routes';
 import { TodoMemoryRoutes } from './todos/routes.memory';
+
+import { FlashcardsRoutes } from './flashcards/routes';
+
 import { CriteriosRoutes } from './criterios/routes';
 import { DatasourceConfig, DatasourceType } from '../infrastructure/datasource/datasource.config';
 
@@ -18,7 +21,11 @@ export class AppRoutes {
 
     router.use('/api/todos', TodoRoutes.routes );
     router.use('/api/todos-memory', TodoMemoryRoutes.routes );
+
+    router.use('/api/flashcards', FlashcardsRoutes.routes );
+
     router.use('/api/criterios', CriteriosRoutes.routes );
+
     
     // Endpoint de sistema para gestión de datasource
     router.get('/api/system/info', (req: Request, res: Response) => {
