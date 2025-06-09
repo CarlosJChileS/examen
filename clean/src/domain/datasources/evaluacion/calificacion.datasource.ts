@@ -1,4 +1,4 @@
-import { Calificacion } from '../entities/evaluacion/calificacion.entity';
+import { Calificacion } from '../../entities/evaluacion/calificacion.entity';
 
 export abstract class CalificacionDatasource {
   abstract create(calificacion: Calificacion): Promise<Calificacion>;

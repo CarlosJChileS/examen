@@ -154,6 +154,17 @@ Puedes usar el archivo `memory-datasource.http` para probar la funcionalidad con
 - [Memory Datasource Guide](./MEMORY_DATASOURCE.md) - Guía completa del datasource de memoria
 - [memory-datasource.http](./memory-datasource.http) - Ejemplos de peticiones HTTP
 
+## Entidades del Dominio
+
+| Entidad | Descripción | Justificación |
+|---------|-------------|---------------|
+| **TodoEntity** | Representa una tarea por realizar con su texto y fecha de finalización opcional. | Sirve como ejemplo simple para exponer la arquitectura y probar los distintos datasources. |
+| **Calificacion** | Calificación global de una grabación realizada por un usuario, incluye puntaje, observaciones y fecha. | Permite almacenar la evaluación general y actúa como agregador de los detalles de cada criterio. |
+| **CriterioEvaluacion** | Define un criterio o aspecto a evaluar junto con su peso relativo. | Separa los distintos puntos que componen una calificación para un análisis más fino. |
+| **DetalleCalificacion** | Puntaje otorgado a un criterio en una diapositiva específica junto con comentarios y audio. | Registra la evaluación a nivel de detalle para identificar fortalezas y debilidades puntuales. |
+| **FeedbackCalificacion** | Retroalimentación textual asociada a una calificación en una fecha determinada. | Permite mantener un historial de comentarios y sugerencias sobre la presentación evaluada. |
+| **ParametrosIdeales** | Valores ideales de claridad, velocidad y pausas utilizados como referencia. | Sirven como guía para comparar las presentaciones contra un estándar deseado. |
+
 ## Aplicación de Flashcards
 
 La primera imagen muestra un listado de flashcards para la administración de los usuarios.
