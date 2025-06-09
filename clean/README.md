@@ -165,6 +165,22 @@ Puedes usar el archivo `memory-datasource.http` para probar la funcionalidad con
 | **FeedbackCalificacion** | Retroalimentación textual asociada a una calificación en una fecha determinada. | Permite mantener un historial de comentarios y sugerencias sobre la presentación evaluada. |
 | **ParametrosIdeales** | Valores ideales de claridad, velocidad y pausas utilizados como referencia. | Sirven como guía para comparar las presentaciones contra un estándar deseado. |
 
+## Escenario de Evaluación
+
+Las siguientes imágenes ilustran el proceso para calificar grabaciones de presentaciones.
+
+1. **Listado de Calificaciones** – Se presentan todas las evaluaciones realizadas (`Calificacion`).
+   ![I1](./public/assets/images/I1.jpg)
+2. **Definición de Criterios** – El evaluador define los criterios (`CriterioEvaluacion`) y los parámetros ideales (`ParametrosIdeales`).
+   ![I2](./public/assets/images/I2.jpg)
+3. **Registro de Detalles** – Durante la revisión se genera un `DetalleCalificacion` por cada diapositiva o sección evaluada.
+   ![I3](./public/assets/images/I3.jpg)
+4. **Resumen de Resultados** – Al finalizar se muestra el puntaje global y se permite registrar observaciones.
+   ![I4](./public/assets/images/I4.jpg)
+5. **Feedback Continuo** – Es posible añadir `FeedbackCalificacion` para que el usuario mejore sus futuras presentaciones.
+   ![I5](./public/assets/images/I5.jpg)
+
+Estas imágenes reflejan cómo las cinco entidades se integran para gestionar las evaluaciones de manera completa.
 ## Aplicación de Flashcards
 
 La primera imagen muestra un listado de flashcards para la administración de los usuarios.

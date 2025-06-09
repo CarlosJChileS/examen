@@ -165,7 +165,23 @@ Puedes usar el archivo `memory-datasource.http` para probar la funcionalidad con
 | **FeedbackCalificacion** | Retroalimentación textual asociada a una calificación en una fecha determinada. | Permite mantener un historial de comentarios y sugerencias sobre la presentación evaluada. |
 | **ParametrosIdeales** | Valores ideales de claridad, velocidad y pausas utilizados como referencia. | Sirven como guía para comparar las presentaciones contra un estándar deseado. |
 
-## Aplicación de Flashcards
+
+
+Las siguientes imágenes ilustran el flujo principal de la aplicación para evaluar grabaciones de presentaciones.
+
+1. **Listado de Calificaciones** – Se muestran todas las grabaciones evaluadas y su puntaje global (`Calificacion`).
+   ![I1](./clean/public/assets/images/I1.jpg)
+2. **Definición de Criterios** – El evaluador configura los aspectos a revisar (`CriterioEvaluacion`) y establece los parámetros ideales (`ParametrosIdeales`).
+   ![I2](./clean/public/assets/images/I2.jpg)
+3. **Registro de Detalles** – Durante la evaluación se califica cada diapositiva o sección generando un `DetalleCalificacion`.
+   ![I3](./clean/public/assets/images/I3.jpg)
+4. **Resumen de Resultados** – Una vez finalizada la revisión se muestra el puntaje final y se permite registrar observaciones.
+   ![I4](./clean/public/assets/images/I4.jpg)
+5. **Feedback Continuo** – Se pueden añadir mensajes de mejora (`FeedbackCalificacion`) para que el usuario realice nuevas grabaciones.
+   ![I5](./clean/public/assets/images/I5.jpg)
+
+Este flujo aprovecha las cinco entidades de evaluación para almacenar tanto los puntajes como las observaciones de cada presentación.
+=======
 
 La primera imagen muestra un listado de flashcards para la administración de los usuarios.
 
@@ -187,4 +203,4 @@ En la quinta imagen mostramos que al dar vuelta a las flashcards se puede ver la
 
 ![I5](./clean/public/assets/images/I5.jpg)
 
-Cada iteración de los usuarios con las flashcards debe quedar almacenada para promover la memoria espaciada.
+
