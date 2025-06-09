@@ -1,4 +1,4 @@
-import { ParametrosIdeales } from '../entities/evaluacion/parametros-ideales.entity';
+import { ParametrosIdeales } from '../../entities/evaluacion/parametros-ideales.entity';
 
 export abstract class ParametrosIdealesDatasource {
   abstract create(param: ParametrosIdeales): Promise<ParametrosIdeales>;

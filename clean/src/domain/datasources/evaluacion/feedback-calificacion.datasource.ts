@@ -1,4 +1,4 @@
-import { FeedbackCalificacion } from '../entities/evaluacion/feedback-calificacion.entity';
+import { FeedbackCalificacion } from '../../entities/evaluacion/feedback-calificacion.entity';
 
 export abstract class FeedbackCalificacionDatasource {
   abstract create(feedback: FeedbackCalificacion): Promise<FeedbackCalificacion>;
