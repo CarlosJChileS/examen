@@ -6,10 +6,10 @@ export class DetalleCalificacion {
     public id: number,
     public calificacion: Calificacion,
     public criterioEvaluacion: CriterioEvaluacion,
-    public slideId: number,
+    public flashcardId: number,
     public puntaje: number,
     public comentario: string,
-    public fragmentoAudioId: number,
+    public tiempoRespuesta: number,
   ) {}
 
   static fromObject(obj: Record<string, any>): DetalleCalificacion {
@@ -17,27 +17,27 @@ export class DetalleCalificacion {
       id,
       calificacion,
       criterioEvaluacion,
-      slideId,
+      flashcardId,
       puntaje,
       comentario,
-      fragmentoAudioId,
+      tiempoRespuesta,
     } = obj;
 
     if (id === undefined) throw 'id is required';
     if (!calificacion) throw 'calificacion is required';
     if (!criterioEvaluacion) throw 'criterioEvaluacion is required';
-    if (slideId === undefined) throw 'slideId is required';
+    if (flashcardId === undefined) throw 'flashcardId is required';
     if (puntaje === undefined) throw 'puntaje is required';
-    if (fragmentoAudioId === undefined) throw 'fragmentoAudioId is required';
+    if (tiempoRespuesta === undefined) throw 'tiempoRespuesta is required';
 
     return new DetalleCalificacion(
       id,
       Calificacion.fromObject(calificacion),
       CriterioEvaluacion.fromObject(criterioEvaluacion),
-      slideId,
+      flashcardId,
       puntaje,
       comentario ?? '',
-      fragmentoAudioId
+      tiempoRespuesta
     );
   }
 }

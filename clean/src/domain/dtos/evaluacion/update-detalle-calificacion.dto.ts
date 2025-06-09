@@ -3,20 +3,20 @@ export class UpdateDetalleCalificacionDto {
     public readonly id: number,
     public readonly calificacionId?: number,
     public readonly criterioEvaluacionId?: number,
-    public readonly slideId?: number,
+    public readonly flashcardId?: number,
     public readonly puntaje?: number,
     public readonly comentario?: string,
-    public readonly fragmentoAudioId?: number,
+    public readonly tiempoRespuesta?: number,
   ) {}
 
   get values() {
     const obj: { [key: string]: any } = {};
     if (this.calificacionId !== undefined) obj.calificacionId = this.calificacionId;
     if (this.criterioEvaluacionId !== undefined) obj.criterioEvaluacionId = this.criterioEvaluacionId;
-    if (this.slideId !== undefined) obj.slideId = this.slideId;
+    if (this.flashcardId !== undefined) obj.flashcardId = this.flashcardId;
     if (this.puntaje !== undefined) obj.puntaje = this.puntaje;
     if (this.comentario !== undefined) obj.comentario = this.comentario;
-    if (this.fragmentoAudioId !== undefined) obj.fragmentoAudioId = this.fragmentoAudioId;
+    if (this.tiempoRespuesta !== undefined) obj.tiempoRespuesta = this.tiempoRespuesta;
     return obj;
   }
 
@@ -25,10 +25,10 @@ export class UpdateDetalleCalificacionDto {
       id,
       calificacionId,
       criterioEvaluacionId,
-      slideId,
+      flashcardId,
       puntaje,
       comentario,
-      fragmentoAudioId,
+      tiempoRespuesta,
     } = props;
 
     if (id === undefined || isNaN(Number(id))) return ['id must be a valid number'];
@@ -39,10 +39,10 @@ export class UpdateDetalleCalificacionDto {
         Number(id),
         calificacionId !== undefined ? Number(calificacionId) : undefined,
         criterioEvaluacionId !== undefined ? Number(criterioEvaluacionId) : undefined,
-        slideId !== undefined ? Number(slideId) : undefined,
+        flashcardId !== undefined ? Number(flashcardId) : undefined,
         puntaje !== undefined ? Number(puntaje) : undefined,
         comentario,
-        fragmentoAudioId !== undefined ? Number(fragmentoAudioId) : undefined,
+        tiempoRespuesta !== undefined ? Number(tiempoRespuesta) : undefined,
       ),
     ];
   }
