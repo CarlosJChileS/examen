@@ -11,3 +11,6 @@ export * from './evaluacion/create-feedback-calificacion.dto';
 export * from './evaluacion/update-feedback-calificacion.dto';
 export * from './evaluacion/create-parametros-ideales.dto';
 export * from './evaluacion/update-parametros-ideales.dto';
+
+// Flashcards
+export * from './flashcards/create-flashcard.dto';
