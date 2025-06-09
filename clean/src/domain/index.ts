@@ -26,3 +26,10 @@ export * from './repositories/evaluacion/criterio-evaluacion.repository';
 export * from './repositories/evaluacion/detalle-calificacion.repository';
 export * from './repositories/evaluacion/feedback-calificacion.repository';
 export * from './repositories/evaluacion/parametros-ideales.repository';
+
+export * from './datasources/evaluacion/calificacion.datasource';
+export * from './datasources/evaluacion/criterio-evaluacion.datasource';
+export * from './datasources/evaluacion/detalle-calificacion.datasource';
+export * from './datasources/evaluacion/feedback-calificacion.datasource';
+export * from './datasources/evaluacion/parametros-ideales.datasource';
+
