@@ -164,6 +164,8 @@ Puedes usar el archivo `memory-datasource.http` para probar la funcionalidad con
 | Entidad | Descripción | Justificación |
 |---------|-------------|---------------|
 | **TodoEntity** | Representa una tarea simple y sirve como base para demostrar la arquitectura. | Ejemplo inicial para cualquier datasource. |
+| **Flashcard** | Tarjeta de estudio con pregunta, respuesta y categorías asociadas. | Es la unidad básica de aprendizaje. |
+| **FlashcardInteraction** | Registra cada vez que el usuario responde una tarjeta, indicando si fue correcta y el tiempo empleado. | Permite aplicar técnicas de memoria espaciada. |
 
 | **Flashcard** | Tarjeta de estudio con pregunta, respuesta y categorías asociadas. | Es la unidad básica de aprendizaje. |
 | **FlashcardInteraction** | Registra cada vez que el usuario responde una tarjeta, indicando si fue correcta y el tiempo empleado. | Permite aplicar técnicas de memoria espaciada. |
@@ -175,8 +177,6 @@ Puedes usar el archivo `memory-datasource.http` para probar la funcionalidad con
 | **DetalleCalificacion** | Guarda el resultado obtenido al revisar cada flashcard individual. | Ayuda a identificar conceptos dominados o pendientes. |
 | **FeedbackCalificacion** | Comentarios o notas de repaso asociados a la sesión estudiada. | Refuerza la mejora continua. |
 | **ParametrosIdeales** | Valores de referencia utilizados por el algoritmo de memoria espaciada. | Determinan los intervalos de repaso. |
-
-
 
 
 ## Escenario de Flashcards

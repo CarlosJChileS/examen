@@ -13,9 +13,9 @@ export class FlashcardsRoutes {
     const controller = new FlashcardsController(repository);
 
     router.get('/', controller.getFlashcards);
-
     router.post('/', controller.createFlashcard);
 
+    router.post('/', controller.createFlashcard);
 
     return router;
   }

@@ -1,10 +1,12 @@
 import { Request, Response } from 'express';
 import { GetFlashcards } from '../../domain/use-cases/flashcards/get-flashcards';
-
 import { CreateFlashcard } from '../../domain/use-cases/flashcards/create-flashcard';
 import { FlashcardRepository, CreateFlashcardDto } from '../../domain';
 
 
+
+import { CreateFlashcard } from '../../domain/use-cases/flashcards/create-flashcard';
+import { FlashcardRepository, CreateFlashcardDto } from '../../domain';
 
 export class FlashcardsController {
   constructor(private readonly repository: FlashcardRepository) {}
@@ -25,5 +27,3 @@ export class FlashcardsController {
       .then(flashcard => res.status(201).json(flashcard))
       .catch(err => res.status(400).json({ error: err }));
   };
-
-}

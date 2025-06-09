@@ -6,6 +6,7 @@ import { TodoMemoryRoutes } from './todos/routes.memory';
 
 import { FlashcardsRoutes } from './flashcards/routes';
 
+import { FlashcardsRoutes } from './flashcards/routes';
 
 import { DatasourceConfig, DatasourceType } from '../infrastructure/datasource/datasource.config';
 
@@ -28,7 +29,7 @@ export class AppRoutes {
     router.use('/api/flashcards', FlashcardsRoutes.routes );
 
 
-
+    router.use('/api/flashcards', FlashcardsRoutes.routes );
 
     
     // Endpoint de sistema para gestión de datasource
