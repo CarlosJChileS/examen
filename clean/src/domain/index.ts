@@ -32,3 +32,4 @@ export * from './datasources/evaluacion/criterio-evaluacion.datasource';
 export * from './datasources/evaluacion/detalle-calificacion.datasource';
 export * from './datasources/evaluacion/feedback-calificacion.datasource';
 export * from './datasources/evaluacion/parametros-ideales.datasource';
+
