@@ -62,6 +62,7 @@ npm run dev:typeorm
 - `npm run dev:memory` - Desarrollo con datasource de memoria
 - `npm run dev:prisma` - Desarrollo con Prisma 
 - `npm run dev:typeorm` - Desarrollo con TypeORM
+- `npm run dev:aux` - Servicio auxiliar de flashcards (2 capas)
 
 ### Producción
 - `npm run start:memory` - Producción con datasource de memoria
