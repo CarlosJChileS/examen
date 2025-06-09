@@ -8,7 +8,7 @@
     "dev:memory": "DATASOURCE_TYPE=memory tsnd --respawn --clear src/app.ts",
     "dev:prisma": "DATASOURCE_TYPE=prisma tsnd --respawn --clear src/app.ts",
     "dev:typeorm": "DATASOURCE_TYPE=typeorm tsnd --respawn --clear src/app.ts",
-    "dev:auxiliar": "tsnd --respawn --clear src/auxiliar/aux-server.ts",
+    "dev:auxiliar": "tsnd --respawn --clear src/auxiliar/auxiliar-server.ts",
 
     "build": "rimraf ./dist && tsc && npm run prisma:migrate:prod",
     "start": "node dist/app.js",
