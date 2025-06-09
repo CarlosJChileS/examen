@@ -60,8 +60,9 @@ npm run dev:typeorm
 ### Desarrollo
 - `npm run dev` - Modo desarrollo (detecta DATASOURCE_TYPE automáticamente, por defecto: MEMORY)
 - `npm run dev:memory` - Desarrollo con datasource de memoria
-- `npm run dev:prisma` - Desarrollo con Prisma 
+- `npm run dev:prisma` - Desarrollo con Prisma
 - `npm run dev:typeorm` - Desarrollo con TypeORM
+- `npm run dev:aux` - Servicio auxiliar de flashcards (2 capas)
 
 ### Producción
 - `npm run start:memory` - Producción con datasource de memoria
