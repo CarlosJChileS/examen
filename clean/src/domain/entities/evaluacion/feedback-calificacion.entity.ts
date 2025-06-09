@@ -2,11 +2,11 @@ import { Calificacion } from './calificacion.entity';
 
 export class FeedbackCalificacion {
   constructor(
-    public readonly id: number,
-    public readonly calificacion: Calificacion,
-    public readonly observacion: string,
-    public readonly fecha: Date,
-    public readonly autor: string,
+    public id: number,
+    public calificacion: Calificacion,
+    public observacion: string,
+    public fecha: Date,
+    public autor: string,
   ) {}
 
   static fromObject(obj: Record<string, any>): FeedbackCalificacion {

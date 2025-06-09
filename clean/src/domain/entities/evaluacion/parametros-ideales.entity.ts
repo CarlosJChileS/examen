@@ -1,10 +1,10 @@
 export class ParametrosIdeales {
   constructor(
-    public readonly id: number,
-    public readonly claridadIdeal: number,
-    public readonly velocidadIdeal: number,
-    public readonly pausasIdeales: number,
-    public readonly otrosParametros: string,
+    public id: number,
+    public claridadIdeal: number,
+    public velocidadIdeal: number,
+    public pausasIdeales: number,
+    public otrosParametros: string,
   ) {}
 
   static fromObject(obj: Record<string, any>): ParametrosIdeales {

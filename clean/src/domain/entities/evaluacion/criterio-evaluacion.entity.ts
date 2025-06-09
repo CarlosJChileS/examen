@@ -1,9 +1,9 @@
 export class CriterioEvaluacion {
   constructor(
-    public readonly id: number,
-    public readonly nombre: string,
-    public readonly descripcion: string,
-    public readonly peso: number,
+    public id: number,
+    public nombre: string,
+    public descripcion: string,
+    public peso: number,
   ) {}
 
   static fromObject(obj: Record<string, any>): CriterioEvaluacion {

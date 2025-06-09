@@ -2,14 +2,14 @@ import { ParametrosIdeales } from './parametros-ideales.entity';
 
 export class Calificacion {
   constructor(
-    public readonly id: number,
-    public readonly grabacionId: number,
-    public readonly usuarioId: number,
-    public readonly puntajeGlobal: number,
-    public readonly observacionGlobal: string,
-    public readonly tipoCalificacion: string,
-    public readonly fecha: Date,
-    public readonly parametrosIdeales?: ParametrosIdeales,
+    public id: number,
+    public grabacionId: number,
+    public usuarioId: number,
+    public puntajeGlobal: number,
+    public observacionGlobal: string,
+    public tipoCalificacion: string,
+    public fecha: Date,
+    public parametrosIdeales?: ParametrosIdeales,
   ) {}
 
   get hasParametros() {

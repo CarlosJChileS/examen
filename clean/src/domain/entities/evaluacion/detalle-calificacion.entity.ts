@@ -3,13 +3,13 @@ import { CriterioEvaluacion } from './criterio-evaluacion.entity';
 
 export class DetalleCalificacion {
   constructor(
-    public readonly id: number,
-    public readonly calificacion: Calificacion,
-    public readonly criterioEvaluacion: CriterioEvaluacion,
-    public readonly slideId: number,
-    public readonly puntaje: number,
-    public readonly comentario: string,
-    public readonly fragmentoAudioId: number,
+    public id: number,
+    public calificacion: Calificacion,
+    public criterioEvaluacion: CriterioEvaluacion,
+    public slideId: number,
+    public puntaje: number,
+    public comentario: string,
+    public fragmentoAudioId: number,
   ) {}
 
   static fromObject(obj: Record<string, any>): DetalleCalificacion {
