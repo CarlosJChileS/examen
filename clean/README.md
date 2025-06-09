@@ -181,3 +181,26 @@ Las siguientes imágenes ilustran el proceso para calificar grabaciones de prese
    ![I5](./public/assets/images/I5.jpg)
 
 Estas imágenes reflejan cómo las cinco entidades se integran para gestionar las evaluaciones de manera completa.
+## Aplicación de Flashcards
+
+La primera imagen muestra un listado de flashcards para la administración de los usuarios.
+
+![I1](./public/assets/images/I1.jpg)
+
+La segunda imagen es donde se muestra la creación de las flashcards y podemos ver que una flashcard puede tener más de una categoría.
+
+![I2](./public/assets/images/I2.jpg)
+
+En la tercera imagen empezamos a estudiar las flashcards escogiendo una categoría de estudio.
+
+![I3](./public/assets/images/I3.jpg)
+
+En la cuarta imagen empezamos a visualizar las flashcard por la categoría escogida.
+
+![I4](./public/assets/images/I4.jpg)
+
+En la quinta imagen mostramos que al dar vuelta a las flashcards se puede ver la respuesta del concepto.
+
+![I5](./public/assets/images/I5.jpg)
+
+Cada iteración de los usuarios con las flashcards debe quedar almacenada para promover la memoria espaciada.

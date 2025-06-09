@@ -165,7 +165,7 @@ Puedes usar el archivo `memory-datasource.http` para probar la funcionalidad con
 | **FeedbackCalificacion** | Retroalimentación textual asociada a una calificación en una fecha determinada. | Permite mantener un historial de comentarios y sugerencias sobre la presentación evaluada. |
 | **ParametrosIdeales** | Valores ideales de claridad, velocidad y pausas utilizados como referencia. | Sirven como guía para comparar las presentaciones contra un estándar deseado. |
 
-## Escenario de Evaluación
+
 
 Las siguientes imágenes ilustran el flujo principal de la aplicación para evaluar grabaciones de presentaciones.
 
@@ -181,3 +181,26 @@ Las siguientes imágenes ilustran el flujo principal de la aplicación para eval
    ![I5](./clean/public/assets/images/I5.jpg)
 
 Este flujo aprovecha las cinco entidades de evaluación para almacenar tanto los puntajes como las observaciones de cada presentación.
+=======
+
+La primera imagen muestra un listado de flashcards para la administración de los usuarios.
+
+![I1](./clean/public/assets/images/I1.jpg)
+
+La segunda imagen es donde se muestra la creación de las flashcards y podemos ver que una flashcard puede tener más de una categoría.
+
+![I2](./clean/public/assets/images/I2.jpg)
+
+En la tercera imagen empezamos a estudiar las flashcards escogiendo una categoría de estudio.
+
+![I3](./clean/public/assets/images/I3.jpg)
+
+En la cuarta imagen empezamos a visualizar las flashcard por la categoría escogida.
+
+![I4](./clean/public/assets/images/I4.jpg)
+
+En la quinta imagen mostramos que al dar vuelta a las flashcards se puede ver la respuesta del concepto.
+
+![I5](./clean/public/assets/images/I5.jpg)
+
+
