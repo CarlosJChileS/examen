@@ -101,6 +101,11 @@ POSTGRES_PASSWORD=123456
 - Operaciones CRUD + funcionalidades adicionales de gestión de datos
 - **Siempre usa datasource de memoria**, independiente de la configuración
 
+### Flashcards
+- Base URL: `/api/flashcards`
+- `GET /` obtiene todas las flashcards desde un archivo JSON
+- `POST /` agrega una nueva flashcard al archivo JSON
+
 Para más detalles sobre los endpoints de memoria, consulta [MEMORY_DATASOURCE.md](./MEMORY_DATASOURCE.md)
 
 ## Casos de Uso
