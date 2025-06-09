@@ -3,15 +3,15 @@ export class CriterioEvaluacion {
     public id: number,
     public nombre: string,
     public descripcion: string,
-    public peso: number,
+    public dificultad: number,
   ) {}
 
   static fromObject(obj: Record<string, any>): CriterioEvaluacion {
-    const { id, nombre, descripcion, peso } = obj;
+    const { id, nombre, descripcion, dificultad } = obj;
     if (id === undefined) throw 'id is required';
     if (!nombre) throw 'nombre is required';
-    if (peso === undefined) throw 'peso is required';
+    if (dificultad === undefined) throw 'dificultad is required';
     const desc = descripcion ?? '';
-    return new CriterioEvaluacion(id, nombre, desc, peso);
+    return new CriterioEvaluacion(id, nombre, desc, dificultad);
   }
 }
